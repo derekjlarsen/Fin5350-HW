@@ -1,0 +1,55 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    keep_tex: true
+    fig_caption: true
+    latex_engine: pdflatex
+    template: ./svm-latex-ms.tex
+title: "Pricing Swaptions with Monte Carlo"
+author:
+- name: John von Neumann
+  affiliation: School of Hard Knocks 
+abstract: "In this article ..."
+keywords: "Python, Monte Carlo, simulation, arbitrage"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontfamily: mathpazo
+fontsize: 11pt
+spacing: double
+bibliography: ./master.bib
+biblio-style: apsr
+---
+
+
+>  
+
+# Introduction
+
+“[While] praxeology begins from universal features of human action, catallactics is concerned with historically contingent modes of exchange or, more broadly, the whole spectrum of modes of human interaction.” @article{martin2011catallactic, This paper will divulge the meaning of catallactics and how it can change an economist’s point of view on the entire market. 
+
+## What is Catallactics?
+
+Theory that tries to describe prices within a market, as they are, not how they should be. Analysis should be based upon individual’s actions and how they have affected the price of goods. 
+
+## Economics vs. Catallactics 
+
+Buchanan reflected his preference towards catallactics because of its potential to tell the entire story to prices and show them, as they are not how they should be. With the following three definitions of economics by  we see the following: 1. Economics is a science of human action. 2. Economics studies exchange. 3. Economics explains the principles of spontaneous order. The Wagnerian Social Economy structure concludes the description of these three definitions and supports a catallactic structure.
+
+# Middle Section
+
+More words about computation in finance and economics
+
+# Summary and Conclusion
+
+Catallactics will help economists perceive the market from a unique perspective that will help create action and decisions based off of what the market currently is rather than how it should be. 
+
+<!--
+# References
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\vspace*{-0.2in}
+\noindent
+-->
+
