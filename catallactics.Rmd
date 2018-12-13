@@ -1,0 +1,108 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    keep_tex: true
+    fig_caption: true
+    latex_engine: pdflatex
+    template: ./svm-latex-ms.tex
+title: "Why should economists have a catallactic point of view?"
+author:
+- name: Derek Larsen
+  affiliation: Utah State University
+abstract: "In this paper the meaning of catallactics and how it can change an economist's point of view on the entire market will be divulged. Further, this paper will portray why economics and catallactics are two separate points of view and how each of their differences potentially affect the market. Finally, an example of a public goods game theory will demonstrate the ideal mindset to how market behavior should be managed."
+keywords: "Catallactics, Public Goods Game Theory, Economics"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontfamily: mathpazo
+fontsize: 11pt
+spacing: double
+bibliography: ./master.bib
+biblio-style: apsr
+---
+
+```{r include=FALSE}
+setwd("C:/Users/breez/OneDrive/Desktop/Catallactics/Catallactics_Paper_files")
+```
+
+
+>  
+
+# Introduction
+
+How should today's economists look at market prices? Should they look at prices as how they think they should be? Should they look at prices by how they truly are? Or can they possibly bring both together and view prices as what they truly are to find what prices might be in the future? These questions can be unfolded by understanding the difference between economics and catallactics.  Economists that have an economic point of view will analyze prices in the market as how they 'should' be. Economists who have a catallactic point of view will analyze the prices as how they currently are. 
+
+According to Hayek the Greek root word of "economy" translates to "household management" @hayek2007. He disagrees with the word economics and the perspective it delves on the world's economy. This is because it entails that the economy carries shared goals.  Each participant within a market will always act in his or her own best interests regardless of what might be happening in another area of the economy. Adam Smith made this point clear by specifying,
+
+"Every individual neither intends to promote the public interest, nor knows how much he is promoting it... he intends only his own security; and by directing that industry in such a manner as its produce may be of the greatest value, he intends only his own gain, and he is in this, as in many other cases, led by an invisible hand to promote an end which was no part of his intention." @smith
+
+By so stating, he clarifies that the economy is a numerous amount of people all acting with their own best interests in mind, not knowing what might happen to the market as a whole. This pertains to economics and catallactics as it shows that when the market is looked at from the perspective of how it is currently behaving. Then from this it will show a much more clear and true picture. 
+
+
+## What is Catallactics?
+
+Catallactics is the science of exchanges within the market based off of how prices currently are. Hayek best describes catallactics from one of his articles by saying, 
+
+"Since the name 'catallactics' has long ago been suggested for the science which deals with the market order, it would seem appropriate to adopt a corresponding term for the market order itself. The term 'catalactics' was derived from the Greek verb katallatein (or katallassein), which meant, significantly, not only 'to exchange' but also 'to admit into the community' and 'to change from enemy into friend'. From it the adjective 'catallactic' has been derived to serve in the place of 'economic' to describe the kind of phenomena with which the science of catallactics deals. From this we can form an English term catallaxy, which we shall use to describe the order brought about by the mutual adjustment of many individual economies in a market. A catallaxy is thus the special kind of spontaneous order produced by the market through people acting within the rules of the law of property, tort and contract." @hayek2013
+
+This provides a purpose for catallactics and how it relates to human interaction within markets. As people act within the laws that have been set forth they will determine the price of goods.  Martin best describes this by saying,   
+"Catallactics is concerned with historically contingent modes of exchange or, more broadly, the whole spectrum of modes of human interaction." @martin When a person defines the price by their actions this provides a true perspective of how the market is currently acting and reacting. 
+
+
+## Public goods game as it relates to the technological problem
+
+To put this into perspective a public goods game can be analyzed to see how people can calculatedly react. To do this we need to think about what the difference between an economical and a technological problem is. How can this relate to catallactics? Buchannan interacts with this question as it relates to what some economists might believe the difference to be. An economical problem as he states is a problem with mutual confliction between multiple ends. A technological problem, on the other hand, has only one existing end that can be maximized above all other solutions. 
+
+Buchannan portrays that really there is no difference between the two problems if there is a predetermined utility function set in place. Through an example he states'
+
+"A consumer finds that she has only \$10 to spend in the supermarket; she confronts an economic problem in choosing among the many competing products that are available for meeting diverse ends and objectives. By contrast, the construction engineer has \$1,000,000 allotted to build a dam to certain specifications. There is only one best way to do this; locating this way constitutes the technological problem." @buchanan
+
+Truly, there is no difference between these two examples. The consumer with the 10 dollars has just the same option as the constructional engineer with 1,000,000 dollars to find the optimal solution, only on a smaller scale. When the function to be maximized is specified in advance of the choices presented to them, there becomes only one optimal solution. 
+
+
+# Maximizing a Utility function from a Public Goods Game
+
+To illustrate the conclusion of the public goods game, the utility function within the game will be analyzed and evaluated to show whether an optimal solution can be found in advanced of decisions to be made in the game. The function comes from a paper evaluating the effect of group size in a public goods provision by R. Mark Isaac and James M. Walker (5). Each player in the game may choose voluntarily how much he or she will contribute to the game. Having each player faced with ten different investment periods throughout the exercise does this. During each of these periods the player is given $Zi$ tokens. This follows with a public goods exchange where each participant will receive a portion of the contributions given. In the paper, the function lays out that G( ) represents the optimal solution, which would be for everyone to invest all of there tokens $\sum mj$ and the participant mi to keep all of theirs. A single individual's payoff can be defined as @isaac:
+
+$Ui (Zi - mi  + (1 | In) G (mi +\sum mj ))$
+
+By taking the second order conditions to find the maximum critical point we can find the maximum utility at which a player in the game should participate. This is done by setting the equation equal to zero and taking the partial derivative of the maximum utility (mi) as follows:
+
+$(Zi - mi) + \alpha/n (mi + \sum mj ))$
+
+$\alpha/(\alpha mi )= -1+   \alpha/n  (1) = 0$
+
+$n=1 \rightarrow  \alpha =n$
+
+Alpha $(\alpha)$ cannot equal n to gain the maximum return, thus the maximum utility by choice should be $mi = 0.$ As tokens are placed into the contribution function the player will receive less than what could have been saved by the player.
+
+Graphically this can be shown by looking simply at the point's of a graph with the x-axis showing the amount contributed to the group and the y-axis being the amount kept returned to the individual. 
+
+```{r echo=FALSE, warning=FALSE}
+x <- c(0:10)
+xyline <- 10 - 1 * x
+plot(xyline, ylab = "Earnings", xlab = "Contribution", main = "Utility Function", type="line", col = "blue")
+```
+
+
+As the public goods game relates to each situation there obviously is a different choice to be made in each circumstance. But by showing that it is a technological problem to be solved, the participant involved will have a clear and concise decision derived from the technical solution that was found beforehand. 
+
+From an economic perspective, one might think then that the optimal solution is for everyone to put in his or her tokens and each person will receive back the exact same amount. This is what should happen. But is it what actually happens? By looking from a catallactic perspective one would be able to recognize that this is not the optimal case. It is far better for the one person to save all of their tokens and receive the contributions from everyone else, which is if anyone else were to contribute. According to the paper, Isaac and Walker find that after each round the amount of tokens placed into the contribution of the function decreases after each round. This signifies that people are making decisions based off of what is currently happening, to support themselves and their own self-interests, and not for the common goal of creating a better economy within the game as a whole. 
+
+Hayek best describes this effect by saying, 
+"The best way to understand how the operation of the market system leads not only to the creation of an order, but also to a great increase of the returns which men receive from their efforts, is to think of it . as a game which we may now call the game of catallaxy." @hayek2013
+
+This is an invitation from Hayek to all saying that to better understand the how the market works they must perceive it as a game with rules. We know each person is going to make decisions that will be the best outcome for him or her within this game. As people react this influences the market. Throughout the reactions if an economist can observe as they are currently happening this will help them see what is taking place in the market and the direction it will head.
+
+# Summary and Conclusion
+
+Catallactics can help economists perceive the market from a unique perspective that will help create action and decisions based off of what the market currently is rather than how it should potentially be. Economics and Catallactics can potentially become one unified perspective in the future if economists are able to analyze prices based off of how they currently are and then measure the reactionary significance that those prices might have on future prices. 
+
+<!--
+# References
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\vspace*{-0.2in}
+\noindent
+-->
